@@ -1,0 +1,20 @@
+[package]
+name = "euler"
+version = "0.1.0"
+authors = ["elbaro <elbaro@github>"]
+
+[dependencies]
+rayon = "*"
+primal = "*"
+indoc = "*"
+ramp = "*"
+num = "*"
+num-bigint = "*"
+num-traits = "*"
+lazy_static = "*"
+chrono = "*"
+time = "*"
+reqwest = "*"
+itertools = "*"
+permutohedron = "*"
+panic-context = "*"
