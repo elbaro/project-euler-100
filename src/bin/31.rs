@@ -7,7 +7,7 @@ fn main() {
 
     d[0] = 1;
     for coin in coins {
-        for x in coin.. = N {
+        for x in coin..= N {
             d[x] += d[x - coin];
         }
     }
