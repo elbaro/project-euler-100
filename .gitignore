@@ -1,3 +1,5 @@
+src/bin/_*.rs
+
 .stignore
 
 /target
