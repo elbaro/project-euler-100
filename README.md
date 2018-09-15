@@ -25,6 +25,7 @@ cargo run --bin status --release
 | [41](https://github.com/elbaro/project-euler/blob/master/src/bin/41.rs) | [42](https://github.com/elbaro/project-euler/blob/master/src/bin/42.rs) | [43](https://github.com/elbaro/project-euler/blob/master/src/bin/43.rs) | [44](https://github.com/elbaro/project-euler/blob/master/src/bin/44.rs) | [45](https://github.com/elbaro/project-euler/blob/master/src/bin/45.rs) | [46](https://github.com/elbaro/project-euler/blob/master/src/bin/46.rs) | [47](https://github.com/elbaro/project-euler/blob/master/src/bin/47.rs) | [48](https://github.com/elbaro/project-euler/blob/master/src/bin/48.rs) | [49](https://github.com/elbaro/project-euler/blob/master/src/bin/49.rs) | [50](https://github.com/elbaro/project-euler/blob/master/src/bin/50.rs) |
 | [51](https://github.com/elbaro/project-euler/blob/master/src/bin/51.rs) | [52](https://github.com/elbaro/project-euler/blob/master/src/bin/52.rs) | [53](https://github.com/elbaro/project-euler/blob/master/src/bin/53.rs) | [54](https://github.com/elbaro/project-euler/blob/master/src/bin/54.rs) | [55](https://github.com/elbaro/project-euler/blob/master/src/bin/55.rs) | [56](https://github.com/elbaro/project-euler/blob/master/src/bin/56.rs) | [57](https://github.com/elbaro/project-euler/blob/master/src/bin/57.rs) | [58](https://github.com/elbaro/project-euler/blob/master/src/bin/58.rs) | [59](https://github.com/elbaro/project-euler/blob/master/src/bin/59.rs) | [60](https://github.com/elbaro/project-euler/blob/master/src/bin/60.rs) |
 | [61](https://github.com/elbaro/project-euler/blob/master/src/bin/61.rs) | [62](https://github.com/elbaro/project-euler/blob/master/src/bin/62.rs) | [63](https://github.com/elbaro/project-euler/blob/master/src/bin/63.rs) | [64](https://github.com/elbaro/project-euler/blob/master/src/bin/64.rs) | [65](https://github.com/elbaro/project-euler/blob/master/src/bin/65.rs) | [66](https://github.com/elbaro/project-euler/blob/master/src/bin/66.rs) | [67](https://github.com/elbaro/project-euler/blob/master/src/bin/67.rs) | [68](https://github.com/elbaro/project-euler/blob/master/src/bin/68.rs) | [69](https://github.com/elbaro/project-euler/blob/master/src/bin/69.rs) | [70](https://github.com/elbaro/project-euler/blob/master/src/bin/70.rs) |
+| [71](https://github.com/elbaro/project-euler/blob/master/src/bin/71.rs) | [72](https://github.com/elbaro/project-euler/blob/master/src/bin/72.rs) | [73](https://github.com/elbaro/project-euler/blob/master/src/bin/73.rs) | [74](https://github.com/elbaro/project-euler/blob/master/src/bin/74.rs) | [75](https://github.com/elbaro/project-euler/blob/master/src/bin/75.rs) | [76](https://github.com/elbaro/project-euler/blob/master/src/bin/76.rs) | [77](https://github.com/elbaro/project-euler/blob/master/src/bin/77.rs) | [78](https://github.com/elbaro/project-euler/blob/master/src/bin/78.rs) | [79](https://github.com/elbaro/project-euler/blob/master/src/bin/79.rs) | [80](https://github.com/elbaro/project-euler/blob/master/src/bin/80.rs) |
 
 
 
@@ -46,12 +47,6 @@ let sum:i64 = a.iter().cast(i64).sum(); // looks good
 let sum:i64 = a.iter().sum(); // better: sum<i32, i64>
 ```
 
-
-- stabilize `#![feature(inclusive_range_syntax)]`
-```
-(1..=100).into_iter_par() // error
-(1 .. = 100) // intellij-rust auto-format
-```
 
 - iterator for multiple variables
 ```
