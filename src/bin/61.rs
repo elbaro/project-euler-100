@@ -25,7 +25,8 @@ fn main() {
         Box::new(|n| n * (3 * n - 2)),
     ];
     for (i, f) in fs.into_iter().enumerate() {
-        (1usize..).map(|n| f(n))
+        (1usize..)
+            .map(|n| f(n))
             .take_while(|&x| x < 10_000)
             .for_each(|x| {
                 p[i][x] = true;
@@ -33,21 +34,34 @@ fn main() {
             });
     }
 
-
     // aabb bbcc ccdd ddee eeff ffaa
     for a in 10..100 {
         for b in a..100 {
-            if !p[6][a * 100 + b] { continue; }
+            if !p[6][a * 100 + b] {
+                continue;
+            }
             for c in a..100 {
-                if !p[6][b * 100 + c] { continue; }
+                if !p[6][b * 100 + c] {
+                    continue;
+                }
                 for d in a..100 {
-                    if !p[6][c * 100 + d] { continue; }
+                    if !p[6][c * 100 + d] {
+                        continue;
+                    }
                     for e in a..100 {
-                        if !p[6][d * 100 + e] { continue; }
-                        'entry:
-                        for f in a..100 {
+                        if !p[6][d * 100 + e] {
+                            continue;
+                        }
+                        'entry: for f in a..100 {
                             if p[6][e * 100 + f] && p[6][f * 100 + a] {
-                                let nums = [a * 100 + b, b * 100 + c, c * 100 + d, d * 100 + e, e * 100 + f, f * 100 + a];
+                                let nums = [
+                                    a * 100 + b,
+                                    b * 100 + c,
+                                    c * 100 + d,
+                                    d * 100 + e,
+                                    e * 100 + f,
+                                    f * 100 + a,
+                                ];
                                 if dfs(&p, &nums, 0b111111) {
                                     println!("{}", nums.iter().sum::<usize>());
                                     return;

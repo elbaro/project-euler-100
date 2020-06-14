@@ -1,4 +1,3 @@
-#![feature(inclusive_range_syntax)]
 extern crate num_bigint;
 extern crate num_traits;
 
@@ -109,7 +108,6 @@ fn main() {
         BigUint::from_str("20849603980134001723930671666823555245252804609722").unwrap(),
         BigUint::from_str("53503534226472524250874054075591789781264330331690").unwrap(),
     ];
-
 
     let mut sum: BigUint = Zero::zero();
     for num in a.iter() {

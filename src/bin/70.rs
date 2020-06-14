@@ -1,5 +1,5 @@
-extern crate rayon;
 extern crate ordered_float;
+extern crate rayon;
 use rayon::prelude::*;
 
 fn main() {
@@ -37,6 +37,7 @@ fn main() {
             b.sort();
             a == b
         })
-        .min_by_key(|&x| ordered_float::OrderedFloat(x as f64 / pi[x] as f64)).unwrap();
+        .min_by_key(|&x| ordered_float::OrderedFloat(x as f64 / pi[x] as f64))
+        .unwrap();
     println!("{}", ans);
 }

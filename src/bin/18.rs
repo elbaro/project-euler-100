@@ -1,6 +1,3 @@
-#![feature(inclusive_range_syntax)]
-
-
 fn main() {
     let tri: Vec<Vec<usize>> = "
         75
@@ -19,17 +16,24 @@ fn main() {
         63 66 04 68 89 53 67 30 73 16 69 87 40 31
         04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
         "
-        .trim().lines().map(|line| line.split_whitespace().map(|word| word.parse::<usize>().unwrap()).collect::<Vec<usize>>()).collect();
-    const n:usize = 15;
+    .trim()
+    .lines()
+    .map(|line| {
+        line.split_whitespace()
+            .map(|word| word.parse::<usize>().unwrap())
+            .collect::<Vec<usize>>()
+    })
+    .collect();
+    const n: usize = 15;
     assert_eq!(tri.len(), n);
     let mut s = [[0; n]; n];
     s[0][0] = tri[0][0];
     for i in 1..n {
-        s[i][0] = s[i-1][0] + tri[i][0];
+        s[i][0] = s[i - 1][0] + tri[i][0];
         for j in 1..=i {
-            s[i][j] = std::cmp::max(s[i-1][j-1],s[i-1][j])+tri[i][j];
+            s[i][j] = std::cmp::max(s[i - 1][j - 1], s[i - 1][j]) + tri[i][j];
         }
     }
 
-    println!("{:}", s[n-1].iter().max().unwrap());
+    println!("{:}", s[n - 1].iter().max().unwrap());
 }

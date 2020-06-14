@@ -1,12 +1,12 @@
-const N:usize = 100000;
-const MOD:u32 = 1_000_000;
+const N: usize = 100000;
+const MOD: u32 = 1_000_000;
 fn main() {
-    let mut d=vec![0u32;N+5];
+    let mut d = vec![0u32; N + 5];
 
-    d[0]=1;
+    d[0] = 1;
     for i in 1..=N {
         for j in (i..=N) {
-            d[j] = (d[j]+d[j-i])%MOD;
+            d[j] = (d[j] + d[j - i]) % MOD;
         }
     }
 
@@ -17,6 +17,6 @@ fn main() {
             break;
         }
     }
-    
+
     println!("{}", ans);
 }

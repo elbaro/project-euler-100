@@ -10,7 +10,7 @@ fn main() {
 
             let mut k = num;
             while k > 0 {
-                if flag & (1 << (k % 10)) > 0{
+                if flag & (1 << (k % 10)) > 0 {
                     break 'l;
                 }
                 flag |= 1 << (k % 10);
@@ -19,7 +19,9 @@ fn main() {
 
             if flag == 0b1111111110 {
                 // found pandigital
-                if s > ans { ans = s.clone(); }
+                if s > ans {
+                    ans = s.clone();
+                }
             }
         }
     }

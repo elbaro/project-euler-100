@@ -21,7 +21,9 @@ fn main() {
                 break;
             }
         }
-        if ok { ans += 1; }
+        if ok {
+            ans += 1;
+        }
     }
     println!("{}", ans);
 }

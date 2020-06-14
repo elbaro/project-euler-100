@@ -1,4 +1,3 @@
-#![feature(inclusive_range_syntax)]
 extern crate num_bigint;
 
 use num_bigint::BigUint;
@@ -9,9 +8,9 @@ fn main() {
     let mut i = 2;
 
     loop {
-        i+=1;
+        i += 1;
         let c = a + &b;
-        if c.to_str_radix(10).len()==1000 {
+        if c.to_str_radix(10).len() == 1000 {
             break;
         }
         a = b;

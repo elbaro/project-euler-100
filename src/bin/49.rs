@@ -1,6 +1,5 @@
 extern crate primal;
 
-
 fn main() {
     let sieve = primal::Sieve::new(10000);
     for a in sieve.primes_from(1000).take_while(|&x| x <= 9999) {
@@ -15,7 +14,9 @@ fn main() {
                 sb.sort();
                 sc.sort();
                 if sa == sb && sb == sc {
-                    if a == 1487 && b == 4817 && c == 8147 { continue; }
+                    if a == 1487 && b == 4817 && c == 8147 {
+                        continue;
+                    }
                     println!("{}{}{}", a, b, c);
                     return;
                 }

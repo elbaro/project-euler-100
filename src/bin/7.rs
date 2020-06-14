@@ -1,4 +1,3 @@
-#![feature(inclusive_range_syntax)]
 extern crate primal;
 
 fn main() {

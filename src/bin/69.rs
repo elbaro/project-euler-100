@@ -26,6 +26,8 @@ fn main() {
         }
     }
 
-    let ans = (1..N + 1).max_by_key(|&x| ordered_float::OrderedFloat(x as f64 / pi[x] as f64)).unwrap();
+    let ans = (1..N + 1)
+        .max_by_key(|&x| ordered_float::OrderedFloat(x as f64 / pi[x] as f64))
+        .unwrap();
     println!("{}", ans);
 }

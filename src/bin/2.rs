@@ -4,11 +4,13 @@ fn main() {
 
     let mut ans = 0;
     while a < mx {
-        if a % 2 == 0 { ans += a; }
+        if a % 2 == 0 {
+            ans += a;
+        }
         let c = a + b;
         a = b;
         b = c;
-    };
+    }
 
     println!("{}", ans);
 }

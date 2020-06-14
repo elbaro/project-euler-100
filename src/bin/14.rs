@@ -6,12 +6,11 @@ fn f(n: usize, set: &mut HashMap<usize, usize>) -> usize {
     if let Some(&len) = set.get(&n) {
         len
     } else {
-        let len = 1 +
-            if n % 2 == 0 {
-                f(n / 2, set)
-            } else {
-                f(3 * n + 1, set)
-            };
+        let len = 1 + if n % 2 == 0 {
+            f(n / 2, set)
+        } else {
+            f(3 * n + 1, set)
+        };
         set.insert(n, len);
         len
     }

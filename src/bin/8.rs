@@ -1,5 +1,4 @@
-#![feature(inclusive_range_syntax)]
-extern crate ramp;
+use num_bigint::BigUint;
 
 fn main() {
     let num = "\
@@ -25,11 +24,17 @@ fn main() {
         71636269561882670428252483600823257530420752963450\
     ";
 
-    let b:Vec<u8> = num.chars().map(|x| x as u8 - '0' as u8).collect();
+    let b: Vec<u8> = num.chars().map(|x| x as u8 - '0' as u8).collect();
 
-    let ans = b.windows(13).map(|slice| {
-        slice.iter().fold(ramp::Int::from(1), |p, &d| p*ramp::Int::from(d))
-    }).max().unwrap();
+    let ans = b
+        .windows(13)
+        .map(|slice| {
+            slice
+                .iter()
+                .fold(BigUint::from(1u8), |p, &d| p * BigUint::from(d))
+        })
+        .max()
+        .unwrap();
 
     println!("{}", ans);
 }
