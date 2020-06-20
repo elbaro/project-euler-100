@@ -1,5 +1,5 @@
-extern crate ordered_float;
-extern crate rayon;
+use ordered_float;
+
 use rayon::prelude::*;
 
 fn main() {

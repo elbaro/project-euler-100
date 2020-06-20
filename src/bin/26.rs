@@ -1,5 +1,5 @@
-extern crate primal;
-extern crate rayon;
+
+
 
 use rayon::prelude::*;
 

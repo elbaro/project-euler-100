@@ -1,5 +1,3 @@
-#![feature(inclusive_range_syntax, iterator_step_by)]
-
 fn main() {
     let mut sum = 1;
     let mut last = 1;

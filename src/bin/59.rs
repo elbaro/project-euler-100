@@ -1,7 +1,7 @@
-extern crate reqwest;
+use reqwest;
 
 fn main() {
-    let res = reqwest::get("https://projecteuler.net/project/resources/p059_cipher.txt")
+    let res = reqwest::blocking::get("https://projecteuler.net/project/resources/p059_cipher.txt")
         .unwrap()
         .text()
         .unwrap();

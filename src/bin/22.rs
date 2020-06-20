@@ -1,8 +1,5 @@
-#![feature(inclusive_range_syntax, io)]
-extern crate reqwest;
-
 fn main() {
-    let res = reqwest::get("https://projecteuler.net/project/resources/p022_names.txt")
+    let res = reqwest::blocking::get("https://projecteuler.net/project/resources/p022_names.txt")
         .unwrap()
         .text()
         .unwrap();

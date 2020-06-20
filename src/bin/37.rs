@@ -1,4 +1,4 @@
-extern crate primal;
+use primal;
 
 use std::collections::HashSet;
 

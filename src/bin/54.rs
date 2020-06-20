@@ -1,5 +1,5 @@
-extern crate rayon;
-extern crate reqwest;
+
+use reqwest;
 
 use rayon::prelude::*;
 
@@ -141,7 +141,7 @@ impl Hand {
 }
 
 fn main() {
-    let res = reqwest::get("https://projecteuler.net/project/resources/p054_poker.txt")
+    let res = reqwest::blocking::get("https://projecteuler.net/project/resources/p054_poker.txt")
         .unwrap()
         .text()
         .unwrap();

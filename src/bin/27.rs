@@ -1,6 +1,6 @@
 #[macro_use]
 extern crate itertools;
-extern crate primal;
+use primal;
 
 fn main() {
     let bs = primal::Primes::all().take_while(|&x| x <= 1_000);

@@ -16,7 +16,7 @@ fn dfs(p: &Vec<Vec<bool>>, nums: &[usize], flag: u32) -> bool {
 fn main() {
     let mut p = vec![vec![false; 10_000]; 7];
 
-    let fs: [Box<Fn(usize) -> usize>; 6] = [
+    let fs: [Box<dyn Fn(usize) -> usize>; 6] = [
         Box::new(|n| n * (n + 1) / 2),
         Box::new(|n| n * n),
         Box::new(|n| n * (3 * n - 1) / 2),
@@ -24,7 +24,7 @@ fn main() {
         Box::new(|n| n * (5 * n - 3) / 2),
         Box::new(|n| n * (3 * n - 2)),
     ];
-    for (i, f) in fs.into_iter().enumerate() {
+    for (i, f) in fs.iter().enumerate() {
         (1usize..)
             .map(|n| f(n))
             .take_while(|&x| x < 10_000)
@@ -52,7 +52,7 @@ fn main() {
                         if !p[6][d * 100 + e] {
                             continue;
                         }
-                        'entry: for f in a..100 {
+                        for f in a..100 {
                             if p[6][e * 100 + f] && p[6][f * 100 + a] {
                                 let nums = [
                                     a * 100 + b,

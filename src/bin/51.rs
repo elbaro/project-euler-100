@@ -1,8 +1,8 @@
-extern crate primal;
+use primal;
 
 fn main() {
     let sieve = primal::Sieve::new(1_000_000 - 1);
-    let mut digits: [u8; 10] = unsafe { std::mem::uninitialized() };
+    let mut digits: [u8; 10] = [0; 10];
     let tens: [u32; 10] = [
         1, 10, 1e2 as u32, 1e3 as u32, 1e4 as u32, 1e5 as u32, 1e6 as u32, 1e7 as u32, 1e8 as u32,
         1e9 as u32,

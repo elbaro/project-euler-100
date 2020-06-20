@@ -1,15 +1,5 @@
-extern crate rand;
-extern crate rayon;
-// #[macro_use]
-// extern crate lazy_static;
-
 use rand::distributions::Uniform;
-use rand::{Rng, ThreadRng};
-use rayon::prelude::*;
-
-// lazy_static! {
-//     static ref dice_dist:Uniform<u8> = Uniform::new(1,5);
-// }
+use rand::{rngs::ThreadRng, Rng};
 
 const GO: u8 = 0;
 const JAIL: u8 = 10;

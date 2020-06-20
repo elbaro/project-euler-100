@@ -1,4 +1,4 @@
-extern crate ordered_float;
+use ordered_float;
 
 fn main() {
     const N: usize = 1_000_000;

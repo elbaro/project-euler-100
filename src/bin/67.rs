@@ -1,10 +1,11 @@
-extern crate reqwest;
+use reqwest;
 
 fn main() {
-    let res = reqwest::get("https://projecteuler.net/project/resources/p067_triangle.txt")
-        .unwrap()
-        .text()
-        .unwrap();
+    let res =
+        reqwest::blocking::get("https://projecteuler.net/project/resources/p067_triangle.txt")
+            .unwrap()
+            .text()
+            .unwrap();
     let tri: Vec<Vec<usize>> = res
         .trim()
         .lines()

@@ -1,4 +1,4 @@
-extern crate primal;
+use primal;
 
 const N: usize = 10000;
 fn main() {

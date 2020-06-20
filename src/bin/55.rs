@@ -1,5 +1,5 @@
 use num_bigint::BigInt;
-use num_bigint::Sign;
+
 
 fn main() {
     let ans = (1..=10_000)

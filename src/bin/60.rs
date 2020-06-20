@@ -1,4 +1,4 @@
-extern crate primal;
+use primal;
 
 fn main() {
     let sieve = primal::Sieve::new(1_000_000_000);

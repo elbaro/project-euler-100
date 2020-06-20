@@ -1,4 +1,4 @@
-extern crate itertools;
+
 use itertools::Itertools;
 use std::collections::HashSet;
 

@@ -1,5 +1,5 @@
-#![feature(range_contains)]
-extern crate primal;
+
+use primal;
 
 fn main() {
     let mut ans = 0;

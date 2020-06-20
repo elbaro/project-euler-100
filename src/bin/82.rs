@@ -1,9 +1,9 @@
 #![feature(vec_resize_default)]
-extern crate reqwest;
+use reqwest;
 
 fn main() {
     // solved by hand
-    let res = reqwest::get("https://projecteuler.net/project/resources/p082_matrix.txt")
+    let res = reqwest::blocking::get("https://projecteuler.net/project/resources/p082_matrix.txt")
         .unwrap()
         .text()
         .unwrap();
@@ -15,7 +15,7 @@ fn main() {
     let mut d: Vec<Vec<i32>> = Vec::with_capacity(n);
     for i in 0..n {
         d.push(Vec::with_capacity(n));
-        d[i].resize_default(n);
+        d[i].resize(n, Default::default());
     }
 
     for i in 0..n {

@@ -1,4 +1,4 @@
-#![feature(inclusive_range_syntax, io)]
+
 
 static P: [usize; 11] = [0, 1, 1, 1, 2, 3, 5, 7, 11, 13, 17];
 

@@ -1,5 +1,5 @@
-extern crate num;
-extern crate panic_context;
+
+
 
 use num::Integer;
 

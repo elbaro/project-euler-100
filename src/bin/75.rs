@@ -1,4 +1,4 @@
-extern crate num;
+use num;
 fn main() {
     const L: usize = 1_500_000;
     let mut visit = vec![0; L + 1];

@@ -1,5 +1,3 @@
-#![feature(inclusive_range_syntax, io)]
-
 fn nth_hexa(n: usize) -> usize {
     n * (2 * n - 1)
 }

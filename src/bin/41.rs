@@ -1,5 +1,5 @@
-extern crate permutohedron;
-extern crate primal;
+
+use primal;
 
 use permutohedron::Heap;
 

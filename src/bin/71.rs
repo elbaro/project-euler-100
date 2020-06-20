@@ -1,6 +1,6 @@
 fn main() {
     // 2/5 + .. < 3/7
-    const times: u32 = (1_000_000 - 5) / 7;
-    const a: u32 = 2 + 3 * times;
-    println!("{}", a);
+    const TIMES: u32 = (1_000_000 - 5) / 7;
+    const ANS: u32 = 2 + 3 * TIMES;
+    println!("{}", ANS);
 }

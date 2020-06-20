@@ -1,9 +1,9 @@
-extern crate reqwest;
+
 
 fn main() {
     // solved by hand
     println!("73162890");
-    // let res = reqwest::get("https://projecteuler.net/project/resources/p079_keylog.txt").unwrap().text().unwrap();
+    // let res = reqwest::blocking::get("https://projecteuler.net/project/resources/p079_keylog.txt").unwrap().text().unwrap();
     // let a:Vec<&str> = res.lines().collect();
 
     // for i in 1..1_000_000 {

@@ -1,9 +1,9 @@
-extern crate num_bigint;
+
 use num_bigint::BigUint;
 
 fn main() {
     let mut p = BigUint::from(1u32);
-    for i in 0..1000 {
+    for _i in 0..1000 {
         p *= BigUint::from(2u32);
     }
     let ans: usize = p

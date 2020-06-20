@@ -1,4 +1,4 @@
-extern crate num_bigint;
+
 use num_bigint::BigUint;
 
 // 40C20 = 40*39*..21 / 20!

@@ -5,7 +5,7 @@ fn main() {
 
     d[0] = 1;
     for i in 1..=N {
-        for j in (i..=N) {
+        for j in i..=N {
             d[j] = (d[j] + d[j - i]) % MOD;
         }
     }

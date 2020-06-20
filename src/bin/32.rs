@@ -1,6 +1,6 @@
 #[macro_use]
 extern crate panic_context;
-extern crate permutohedron;
+
 
 use permutohedron::Heap;
 use std::collections::HashSet;

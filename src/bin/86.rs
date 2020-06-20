@@ -4,13 +4,13 @@
 
 use rayon::prelude::*;
 
-fn count(M: i32) -> i32 {
-    (1..=M)
+fn count(m: i32) -> i32 {
+    (1..=m)
         .into_par_iter()
         .map(|a| {
             let mut cnt = 0;
-            for b in a..=M {
-                for c in b..=M {
+            for b in a..=m {
+                for c in b..=m {
                     let d = c * c + (a + b) * (a + b);
                     let sqrt = (d as f64).sqrt() as i32;
                     if sqrt * sqrt == d {
@@ -26,11 +26,11 @@ fn count(M: i32) -> i32 {
 fn main() {
     let mut left = 1000;
     let mut right = 5000;
-    const target: i32 = 1_000_000;
+    const TARGET: i32 = 1_000_000;
     while left < right {
         let mid = (left + right) / 2;
         let cnt = count(mid);
-        if cnt < target {
+        if cnt < TARGET {
             left = mid + 1;
         } else {
             right = mid;

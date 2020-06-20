@@ -1,5 +1,5 @@
-#![feature(iterator_step_by)]
-extern crate primal;
+
+use primal;
 
 fn main() {
     println!(

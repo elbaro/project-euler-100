@@ -1,10 +1,10 @@
 #![feature(vec_resize_default)]
-extern crate reqwest;
+use reqwest;
 use std::collections::VecDeque;
 
 fn main() {
     // solved by hand
-    let res = reqwest::get("https://projecteuler.net/project/resources/p083_matrix.txt")
+    let res = reqwest::blocking::get("https://projecteuler.net/project/resources/p083_matrix.txt")
         .unwrap()
         .text()
         .unwrap();

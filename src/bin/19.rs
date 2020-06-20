@@ -1,6 +1,3 @@
-extern crate chrono;
-extern crate time;
-
 use chrono::prelude::*;
 
 fn main() {
@@ -14,7 +11,7 @@ fn main() {
         if d == e {
             break;
         }
-        d = d + time::Duration::days(1);
+        d = d + chrono::Duration::days(1);
     }
     println!("{}", ans);
 }

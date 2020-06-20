@@ -1,4 +1,4 @@
-extern crate primal;
+use primal;
 
 fn main() {
     let n = 10000;
