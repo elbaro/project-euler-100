@@ -1,4 +1,3 @@
-
 use primal;
 
 use permutohedron::Heap;

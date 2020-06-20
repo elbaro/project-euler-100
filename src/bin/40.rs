@@ -1,5 +1,3 @@
-
-
 fn f(mut n: i32) -> i32 {
     let mut cnt = 9;
     let mut last = 0;

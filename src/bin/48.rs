@@ -1,5 +1,3 @@
-
-
 fn main() {
     const MOD: u64 = 1e10 as u64;
 

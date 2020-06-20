@@ -1,5 +1,3 @@
-
-
 fn nth_penta(n: usize) -> usize {
     n * (3 * n - 1) / 2
 }

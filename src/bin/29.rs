@@ -1,6 +1,5 @@
-
-use num_traits;
 use num_bigint::BigUint;
+use num_traits;
 
 fn main() {
     let mut s = std::collections::HashSet::new();

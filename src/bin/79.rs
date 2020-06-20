@@ -1,5 +1,3 @@
-
-
 fn main() {
     // solved by hand
     println!("73162890");

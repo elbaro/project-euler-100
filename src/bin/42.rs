@@ -1,4 +1,3 @@
-
 use reqwest;
 
 fn main() {

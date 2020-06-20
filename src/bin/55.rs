@@ -1,6 +1,5 @@
 use num_bigint::BigInt;
 
-
 fn main() {
     let ans = (1..=10_000)
         .filter(|&start| {

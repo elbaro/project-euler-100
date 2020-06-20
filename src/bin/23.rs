@@ -1,6 +1,5 @@
 use primal;
 
-
 use rayon::prelude::*;
 
 fn main() {

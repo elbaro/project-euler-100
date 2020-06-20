@@ -1,5 +1,3 @@
-
-
 fn main() {
     #[rustfmt::skip]
     let a = [

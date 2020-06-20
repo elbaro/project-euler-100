@@ -1,5 +1,3 @@
-
-
 static P: [usize; 11] = [0, 1, 1, 1, 2, 3, 5, 7, 11, 13, 17];
 
 fn f(num: usize, level: usize, used: u32) -> usize {

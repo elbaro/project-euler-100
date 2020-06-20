@@ -1,4 +1,3 @@
-
 use primal;
 
 fn main() {

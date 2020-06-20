@@ -1,6 +1,3 @@
-
-
-
 use num::Integer;
 
 fn main() {
