@@ -1,15 +1,12 @@
-# Project Euler - in Rust
+# Project Euler 100 - in Rust
 
 ## How to run
 
-You need `nightly`.
-
 ```sh
-cargo run --bin problem_id --release
 cargo run --bin 123 --release
 ```
 
-To generate the table below,
+To generate the status table below,
 
 ```
 cargo run --bin status --release
@@ -28,6 +25,20 @@ cargo run --bin status --release
 | [71](https://github.com/elbaro/project-euler/blob/master/src/bin/71.rs) | [72](https://github.com/elbaro/project-euler/blob/master/src/bin/72.rs) | [73](https://github.com/elbaro/project-euler/blob/master/src/bin/73.rs) | [74](https://github.com/elbaro/project-euler/blob/master/src/bin/74.rs) | [75](https://github.com/elbaro/project-euler/blob/master/src/bin/75.rs) | [76](https://github.com/elbaro/project-euler/blob/master/src/bin/76.rs) | [77](https://github.com/elbaro/project-euler/blob/master/src/bin/77.rs) | [78](https://github.com/elbaro/project-euler/blob/master/src/bin/78.rs) | [79](https://github.com/elbaro/project-euler/blob/master/src/bin/79.rs) | [80](https://github.com/elbaro/project-euler/blob/master/src/bin/80.rs) |
 | [81](https://github.com/elbaro/project-euler/blob/master/src/bin/81.rs) | [82](https://github.com/elbaro/project-euler/blob/master/src/bin/82.rs) | [83](https://github.com/elbaro/project-euler/blob/master/src/bin/83.rs) | [84](https://github.com/elbaro/project-euler/blob/master/src/bin/84.rs) | [85](https://github.com/elbaro/project-euler/blob/master/src/bin/85.rs) | [86](https://github.com/elbaro/project-euler/blob/master/src/bin/86.rs) | [87](https://github.com/elbaro/project-euler/blob/master/src/bin/87.rs) | [88](https://github.com/elbaro/project-euler/blob/master/src/bin/88.rs) | [89](https://github.com/elbaro/project-euler/blob/master/src/bin/89.rs) | [90](https://github.com/elbaro/project-euler/blob/master/src/bin/90.rs) |
 | [91](https://github.com/elbaro/project-euler/blob/master/src/bin/91.rs) | [92](https://github.com/elbaro/project-euler/blob/master/src/bin/92.rs) | [93](https://github.com/elbaro/project-euler/blob/master/src/bin/93.rs) | [94](https://github.com/elbaro/project-euler/blob/master/src/bin/94.rs) | [95](https://github.com/elbaro/project-euler/blob/master/src/bin/95.rs) | [96](https://github.com/elbaro/project-euler/blob/master/src/bin/96.rs) | [97](https://github.com/elbaro/project-euler/blob/master/src/bin/97.rs) | [98](https://github.com/elbaro/project-euler/blob/master/src/bin/98.rs) | [99](https://github.com/elbaro/project-euler/blob/master/src/bin/99.rs) | [100](https://github.com/elbaro/project-euler/blob/master/src/bin/100.rs) |
+
+To repect the PE's no spoiler policy, this repo does not provide solutions after the first hundred problems.
+
+(The problem 1~100 are coding rather than math)
+
+Still, these solutions provide examples of how things are implmeneted in rust:
+
+- initializing constant table
+- recursive call
+- big int
+- parallel computation
+- iterator techniques (iproduct, permutation, etc)
+- short-circuit the computation (label-break-with-value)
+- 2d array
 
 ## Rust Features I need
 
